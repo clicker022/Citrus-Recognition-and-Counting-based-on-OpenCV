@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="BasePane" prefHeight="681.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Gui">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebdfca" height="681.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="851.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="413.0" layoutX="101.0" layoutY="82.0" stroke="BLACK" strokeType="INSIDE" width="642.0" />
+      <MenuBar prefHeight="32.0" prefWidth="850.0">
+         <menus>
+            <Menu fx:id="Picture" mnemonicParsing="false" text="文件">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Open" text="打开图片" />
+                  <MenuItem mnemonicParsing="false" onAction="#Save" text="保存" />
+                  <MenuItem mnemonicParsing="false" onAction="#Close" text="关闭" />
+               </items>
+            </Menu>
+            <Menu fx:id="Edit" mnemonicParsing="false" text="操作">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Ori" text="原始图片" />
+                  <MenuItem mnemonicParsing="false" onAction="#Rgb" text="2R-G-B" />
+                  <MenuItem mnemonicParsing="false" onAction="#Otsu" text="Otsu" />
+                  <MenuItem mnemonicParsing="false" onAction="#Wipe" text="去噪" />
+                  <MenuItem mnemonicParsing="false" onAction="#Fill" text="空洞填充" />
+                  <MenuItem mnemonicParsing="false" onAction="#Range" text="距离变换" />
+                  <MenuItem mnemonicParsing="false" onAction="#Seg" text="分水岭分割" />
+                  <MenuItem mnemonicParsing="false" onAction="#Bump" text="凸包运算" />
+                  <MenuItem mnemonicParsing="false" onAction="#Match" text="圆拟合" />
+                  <MenuItem mnemonicParsing="false" onAction="#Tag" text="数量识别" />
+               </items>
+            </Menu>
+            <Menu fx:id="Help" mnemonicParsing="false" text="帮助">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#About" text="关于系统" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button fx:id="Button" layoutX="375.0" layoutY="509.0" mnemonicParsing="false" onAction="#Check" prefHeight="47.0" prefWidth="73.0" text="一键识别" />
+      <ImageView fx:id="ImageView" fitHeight="394.0" fitWidth="524.0" layoutX="156.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="314.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   🍊图片导入区" wrappingWidth="195.30029296875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="98.0" layoutX="101.0" layoutY="563.0" stroke="BLACK" strokeType="INSIDE" width="642.0" />
+      <Label fx:id="Label" layoutX="116.0" layoutY="562.0" prefHeight="91.0" prefWidth="604.0" text="🍊🍊欢迎来到柑橘识别系统，可点击“帮助”查看操作哦" textAlignment="JUSTIFY">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
