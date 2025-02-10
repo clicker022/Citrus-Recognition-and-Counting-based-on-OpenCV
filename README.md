@@ -1,6 +1,6 @@
 # Citrus-Recognition-and-Counting-based-on-OpenCV
 Dependencies: dll/opencv_java450.dll
-              jdk1.8.0_291
+jdk1.8.0_291
 
 Programm Exhibition:
 1. Source Image
